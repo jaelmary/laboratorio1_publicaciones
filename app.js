@@ -31,7 +31,7 @@ const productosJSON = [
         card.classList.add('producto-card');
         
         card.innerHTML = `
-          <img src="${producto.imagen}" alt="${producto.nombre}">
+          <img src="${producto.imagen}" alt="${producto.nombre}" width=100 height=100>
           <h2>${producto.nombre}</h2>
           <p>${producto.descripcion}</p>
           <p><strong>Precio:</strong> Bs${producto.precio.toFixed(2)}</p>
@@ -43,4 +43,5 @@ const productosJSON = [
     }
 
     // Llamar a la función al cargar la página
+
     mostrarProductos();
